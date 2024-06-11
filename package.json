@@ -3,11 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node dist/simple-angular/server/server.mjs",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:simple-angular": "node dist/simple-angular/server/server.mjs"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -40,5 +39,8 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.4.2"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
